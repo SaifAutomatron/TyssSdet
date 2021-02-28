@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results skipped="0" failed="0" ignored="0" total="1" passed="1">
+  <reporter-output>
+  </reporter-output>
+  <suite name="Default suite" duration-ms="17901" started-at="2021-02-28T12:36:53 IST" finished-at="2021-02-28T12:37:11 IST">
+    <groups>
+    </groups>
+    <test name="Default test" duration-ms="17901" started-at="2021-02-28T12:36:53 IST" finished-at="2021-02-28T12:37:11 IST">
+      <class name="com.crm.vtiger.test.SearchOrganisationWithAlbhabets">
+        <test-method status="PASS" signature="configBeforeSuite()[pri:0, instance:com.crm.vtiger.test.SearchOrganisationWithAlbhabets@305fd85d]" name="configBeforeSuite" is-config="true" duration-ms="813" started-at="2021-02-28T12:36:52 IST" finished-at="2021-02-28T12:36:53 IST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- configBeforeSuite -->
+        <test-method status="PASS" signature="configBeforeClass()[pri:0, instance:com.crm.vtiger.test.SearchOrganisationWithAlbhabets@305fd85d]" name="configBeforeClass" is-config="true" duration-ms="3008" started-at="2021-02-28T12:36:53 IST" finished-at="2021-02-28T12:36:56 IST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- configBeforeClass -->
+        <test-method status="PASS" signature="configBeforeMtd()[pri:0, instance:com.crm.vtiger.test.SearchOrganisationWithAlbhabets@305fd85d]" name="configBeforeMtd" is-config="true" duration-ms="2713" started-at="2021-02-28T12:36:56 IST" finished-at="2021-02-28T12:36:58 IST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- configBeforeMtd -->
+        <test-method status="PASS" signature="searchOrganisationWithAlbhabetsTest()[pri:0, instance:com.crm.vtiger.test.SearchOrganisationWithAlbhabets@305fd85d]" name="searchOrganisationWithAlbhabetsTest" duration-ms="5549" started-at="2021-02-28T12:36:58 IST" finished-at="2021-02-28T12:37:04 IST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- searchOrganisationWithAlbhabetsTest -->
+        <test-method status="PASS" signature="configAfterMethod()[pri:0, instance:com.crm.vtiger.test.SearchOrganisationWithAlbhabets@305fd85d]" name="configAfterMethod" is-config="true" duration-ms="6497" started-at="2021-02-28T12:37:04 IST" finished-at="2021-02-28T12:37:10 IST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- configAfterMethod -->
+        <test-method status="PASS" signature="configAfterClass()[pri:0, instance:com.crm.vtiger.test.SearchOrganisationWithAlbhabets@305fd85d]" name="configAfterClass" is-config="true" duration-ms="94" started-at="2021-02-28T12:37:10 IST" finished-at="2021-02-28T12:37:11 IST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- configAfterClass -->
+        <test-method status="PASS" signature="configAfterSuite()[pri:0, instance:com.crm.vtiger.test.SearchOrganisationWithAlbhabets@305fd85d]" name="configAfterSuite" is-config="true" duration-ms="1" started-at="2021-02-28T12:37:11 IST" finished-at="2021-02-28T12:37:11 IST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- configAfterSuite -->
+      </class> <!-- com.crm.vtiger.test.SearchOrganisationWithAlbhabets -->
+    </test> <!-- Default test -->
+  </suite> <!-- Default suite -->
+</testng-results>
