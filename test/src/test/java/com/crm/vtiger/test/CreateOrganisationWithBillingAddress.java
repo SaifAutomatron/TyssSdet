@@ -1,6 +1,7 @@
 package com.crm.vtiger.test;
 
 import org.testng.Assert;
+import org.testng.annotations.Listeners;
 import org.testng.annotations.Test;
 import com.crm.vtiger.genericutility.BaseClass;
 import com.crm.vtiger.objectRepositryUtility.CreateNewOrganisationPage;
@@ -12,11 +13,12 @@ import com.crm.vtiger.objectRepositryUtility.OrganisationPage;
  * @author Saif
  *
  */
+@Listeners(com.crm.vtiger.genericutility.MyListenerIMP.class)
 public class CreateOrganisationWithBillingAddress extends BaseClass{
 	
 		// TODO Auto-generated constructor stub
 	
-	@Test
+	@Test(groups= {"regression"})
 	public void createOrganisationWithBillingAddressTest() throws Throwable {
 	
 	//Step 3 & 4: Navigate to create new organisation page
@@ -42,8 +44,9 @@ public class CreateOrganisationWithBillingAddress extends BaseClass{
     CreatedOrganisationInfoPage coip = new CreatedOrganisationInfoPage(driver);
     wdutil.waitForElementVisibility(driver, coip.getSuccessfulMsg());
     String actSusccessMsg = coip.getSuccessfulMsg().getText();	
-    Assert.assertTrue(actSusccessMsg.contains(orgName));
-	
+   Assert.assertTrue(actSusccessMsg.contains(orgName));
  
 	}
+	
+	
 }

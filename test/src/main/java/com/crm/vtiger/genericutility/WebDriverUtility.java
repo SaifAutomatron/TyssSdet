@@ -1,16 +1,22 @@
 package com.crm.vtiger.genericutility;
 
+import java.io.File;
+import java.io.IOException;
 import java.util.Set;
 import java.util.concurrent.TimeUnit;
 
 import org.openqa.selenium.By;
 import org.openqa.selenium.JavascriptExecutor;
+import org.openqa.selenium.OutputType;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.interactions.Actions;
+import org.openqa.selenium.support.events.EventFiringWebDriver;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.Select;
 import org.openqa.selenium.support.ui.WebDriverWait;
+
+import com.google.common.io.Files;
 
 /**
  * 
@@ -52,7 +58,7 @@ public class WebDriverUtility {
 	}
 	
 	/**
-	 * wait for element to be clickable and the click it
+	 * wait for element to be clickable and the click it(Explicit wait)
 	 * @param driver
 	 * @param locator
 	 */
@@ -106,7 +112,7 @@ public class WebDriverUtility {
 	        }
 	}
 	  /**
-	   * used to wait & click for expected element in GUI
+	   * used to wait & click for expected element in GUI(customised wait)
 	   * @param element
 	   * @throws Throwable
 	   */
@@ -239,7 +245,7 @@ public class WebDriverUtility {
 	 * used to Switch to Alert Popup & click on OK button
 	 * @param driver
 	 */
-	public void alerttOK(WebDriver driver) {
+	public void alertOK(WebDriver driver) {
 		
 		driver.switchTo().alert().accept();
 	}
@@ -248,7 +254,7 @@ public class WebDriverUtility {
 	 * used to Switch to Alert Popup & click on cancel button
 	 * @param driver
 	 */
-   public void alerttCancel(WebDriver driver) {
+   public void alertCancel(WebDriver driver) {
 		
 		driver.switchTo().alert().dismiss();
 	}
@@ -267,6 +273,21 @@ public class WebDriverUtility {
 public void waitForPageToLoad(WebDriver driver) {
 	driver.manage().window().maximize();
 	driver.manage().timeouts().implicitlyWait(PathConst.IMPLICITWAIT, TimeUnit.SECONDS);
+}
+/**
+ * 
+ * @param methodName
+ * @throws IOException
+ */
+public String takeScreenShot(String methodName) throws IOException {
+	EventFiringWebDriver event=new EventFiringWebDriver(BaseClass.driver);
+	File src=event.getScreenshotAs(OutputType.FILE);
+	String screenshotPath=System.getProperty("user.dir")+"/Screenshots/"+methodName+".PNG";
+	File dest=new File(screenshotPath);
+	Files.copy(src, dest);
+	
+	return screenshotPath;
+	
 }
 	
 	

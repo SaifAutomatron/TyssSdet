@@ -6,6 +6,7 @@ import java.util.List;
 
 import org.openqa.selenium.WebElement;
 import org.testng.Assert;
+import org.testng.annotations.Listeners;
 import org.testng.annotations.Test;
 import com.crm.vtiger.genericutility.BaseClass;
 import com.crm.vtiger.objectRepositryUtility.OrganisationPage;
@@ -15,9 +16,10 @@ import com.crm.vtiger.objectRepositryUtility.OrganisationPage;
  * @author Saif
  *
  */
+@Listeners(com.crm.vtiger.genericutility.MyListenerIMP.class)
 public class SearchOrganisationWithAlbhabets extends BaseClass {
 	
-	@Test
+	@Test(retryAnalyzer=com.crm.vtiger.genericutility.RetryAnalyzer.class)
 	public void searchOrganisationWithAlbhabetsTest() throws Throwable
 	{
 		
@@ -35,7 +37,8 @@ public class SearchOrganisationWithAlbhabets extends BaseClass {
 		}
         
 		//validation
-		Assert.assertEquals(ll.getLast(), "Z");
+//		Assert.assertEquals(ll.getLast(), "Z");
+		Assert.fail();
 
 	}
 

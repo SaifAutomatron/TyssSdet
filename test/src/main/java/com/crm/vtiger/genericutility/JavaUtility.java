@@ -24,13 +24,21 @@ public class JavaUtility {
 	 * returns current date in the form of string array
 	 * @return String dateArray
 	 */
-	public String[] getCurrentDate()
+	public String[] getCurrentDateArray()
 	{
 		Date date=new Date();
 		String strDate = date.toString();
 		String[] strDateArray = strDate.split("");
 		
 		return strDateArray;
+	}
+	public String getCurrentDate()
+	{
+		Date date=new Date();
+		String strDate = date.toString();
+		
+		
+		return strDate;
 	}
 
 }

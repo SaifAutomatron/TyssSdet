@@ -1,6 +1,7 @@
 package com.crm.vtiger.test;
 
 import org.testng.Assert;
+import org.testng.annotations.Listeners;
 import org.testng.annotations.Test;
 import com.crm.vtiger.genericutility.BaseClass;
 import com.crm.vtiger.objectRepositryUtility.CreateNewOrganisationPage;
@@ -12,10 +13,11 @@ import com.crm.vtiger.objectRepositryUtility.OrganisationPage;
  * @author Saif
  *
  */
+@Listeners(com.crm.vtiger.genericutility.MyListenerIMP.class)
 public class CreateOrganisationWithoutShippingAddress extends BaseClass
 {
 
-	@Test
+	@Test(groups= {"smoke"})
 	public void createOrganisationWithoutShippingAddressTest() throws Throwable {
 	
 	//Step 3 & 4: Navigate to create new organisation page

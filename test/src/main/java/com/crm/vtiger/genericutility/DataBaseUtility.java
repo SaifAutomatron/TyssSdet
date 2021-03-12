@@ -5,8 +5,6 @@ import java.sql.DriverManager;
 import java.sql.ResultSet;
 import java.sql.SQLException;
 
-import com.mysql.cj.jdbc.Driver;
-
 /**
  * 
  * @author Saif
@@ -19,13 +17,9 @@ public class DataBaseUtility {
 
 	
 	public  void connectToDB() throws Throwable {
-		Driver driverRef;
-		
-			driverRef = new Driver();
-			DriverManager.registerDriver(driverRef);
+
+		    Class.forName("com.mysql.cj.jdbc.Driver");
 			con = DriverManager.getConnection("jdbc:mysql://localhost:3306/saif", "root", "root");
-		
-	
 	}
 	
 	/**
