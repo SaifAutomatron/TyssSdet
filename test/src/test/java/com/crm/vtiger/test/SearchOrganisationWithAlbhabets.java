@@ -36,8 +36,8 @@ public class SearchOrganisationWithAlbhabets extends BaseClass {
 			wb.click();
 		}
         
-		//validation
-//		Assert.assertEquals(ll.getLast(), "Z");
+
+		Assert.assertEquals(ll.getLast(), "Z");
 		Assert.fail();
 
 	}
