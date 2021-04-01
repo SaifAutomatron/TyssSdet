@@ -83,7 +83,8 @@
     
   </dependencies>
   
-  <build>
+ 
+   <build>
     <pluginManagement>
       <plugins>
         <plugin>

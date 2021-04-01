@@ -2,43 +2,16 @@
 <testng-results skipped="0" failed="0" ignored="0" total="1" passed="1">
   <reporter-output>
   </reporter-output>
-  <suite name="Default suite" duration-ms="11585" started-at="2021-03-12T12:34:12 IST" finished-at="2021-03-12T12:34:24 IST">
+  <suite name="Default suite" duration-ms="5546" started-at="2021-03-31T21:34:47 IST" finished-at="2021-03-31T21:34:52 IST">
     <groups>
-      <group name="regression">
-        <method signature="CreateOrganisationWithBillingAddress.createOrganisationWithBillingAddressTest()[pri:0, instance:com.crm.vtiger.test.CreateOrganisationWithBillingAddress@3043fe0e]" name="createOrganisationWithBillingAddressTest" class="com.crm.vtiger.test.CreateOrganisationWithBillingAddress"/>
-      </group> <!-- regression -->
     </groups>
-    <test name="Default test" duration-ms="11585" started-at="2021-03-12T12:34:12 IST" finished-at="2021-03-12T12:34:24 IST">
-      <class name="com.crm.vtiger.test.CreateOrganisationWithBillingAddress">
-        <test-method status="PASS" signature="configBeforeSuite()[pri:0, instance:com.crm.vtiger.test.CreateOrganisationWithBillingAddress@3043fe0e]" name="configBeforeSuite" is-config="true" duration-ms="454" started-at="2021-03-12T12:34:12 IST" finished-at="2021-03-12T12:34:12 IST">
+    <test name="Default test" duration-ms="5546" started-at="2021-03-31T21:34:47 IST" finished-at="2021-03-31T21:34:52 IST">
+      <class name="com.practice.test.TestOne">
+        <test-method status="PASS" signature="testone()[pri:0, instance:com.practice.test.TestOne@4232c52b]" name="testone" duration-ms="5520" started-at="2021-03-31T21:34:47 IST" finished-at="2021-03-31T21:34:52 IST">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- configBeforeSuite -->
-        <test-method status="PASS" signature="configBeforeClass()[pri:0, instance:com.crm.vtiger.test.CreateOrganisationWithBillingAddress@3043fe0e]" name="configBeforeClass" is-config="true" duration-ms="2760" started-at="2021-03-12T12:34:13 IST" finished-at="2021-03-12T12:34:15 IST">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- configBeforeClass -->
-        <test-method status="PASS" signature="configBeforeMtd()[pri:0, instance:com.crm.vtiger.test.CreateOrganisationWithBillingAddress@3043fe0e]" name="configBeforeMtd" is-config="true" duration-ms="1534" started-at="2021-03-12T12:34:15 IST" finished-at="2021-03-12T12:34:17 IST">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- configBeforeMtd -->
-        <test-method status="PASS" signature="createOrganisationWithBillingAddressTest()[pri:0, instance:com.crm.vtiger.test.CreateOrganisationWithBillingAddress@3043fe0e]" name="createOrganisationWithBillingAddressTest" duration-ms="6378" started-at="2021-03-12T12:34:17 IST" finished-at="2021-03-12T12:34:23 IST">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- createOrganisationWithBillingAddressTest -->
-        <test-method status="PASS" signature="configAfterMethod()[pri:0, instance:com.crm.vtiger.test.CreateOrganisationWithBillingAddress@3043fe0e]" name="configAfterMethod" is-config="true" duration-ms="704" started-at="2021-03-12T12:34:23 IST" finished-at="2021-03-12T12:34:24 IST">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- configAfterMethod -->
-        <test-method status="PASS" signature="configAfterClass()[pri:0, instance:com.crm.vtiger.test.CreateOrganisationWithBillingAddress@3043fe0e]" name="configAfterClass" is-config="true" duration-ms="57" started-at="2021-03-12T12:34:24 IST" finished-at="2021-03-12T12:34:24 IST">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- configAfterClass -->
-        <test-method status="PASS" signature="configAfterSuite()[pri:0, instance:com.crm.vtiger.test.CreateOrganisationWithBillingAddress@3043fe0e]" name="configAfterSuite" is-config="true" duration-ms="2" started-at="2021-03-12T12:34:24 IST" finished-at="2021-03-12T12:34:24 IST">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- configAfterSuite -->
-      </class> <!-- com.crm.vtiger.test.CreateOrganisationWithBillingAddress -->
+        </test-method> <!-- testone -->
+      </class> <!-- com.practice.test.TestOne -->
     </test> <!-- Default test -->
   </suite> <!-- Default suite -->
 </testng-results>

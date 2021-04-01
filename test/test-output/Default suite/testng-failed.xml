@@ -3,17 +3,11 @@
 <suite guice-stage="DEVELOPMENT" name="Failed suite [Default suite]">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="com.crm.vtiger.test.SearchOrganisationWithAlbhabets">
+      <class name="com.practice.test.TestOne">
         <methods>
-          <include name="configBeforeSuite"/>
-          <include name="configAfterClass"/>
-          <include name="configAfterSuite"/>
-          <include name="searchOrganisationWithAlbhabetsTest"/>
-          <include name="configBeforeMtd"/>
-          <include name="configBeforeClass"/>
-          <include name="configAfterMethod"/>
+          <include name="testone"/>
         </methods>
-      </class> <!-- com.crm.vtiger.test.SearchOrganisationWithAlbhabets -->
+      </class> <!-- com.practice.test.TestOne -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->
